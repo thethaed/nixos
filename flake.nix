@@ -66,7 +66,7 @@
 #            ./modules/zsh
 #          ]; #modules to be loaded by home-manager
         JsDesktop = mkComputer
-          ./machines/JsDesktop #machine specific configuration
+          ./hosts/JsDesktop #machine specific configuration
           "john" #default user
           [
             ./modules/xserver
