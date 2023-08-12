@@ -1,0 +1,2 @@
+# nixos
+nixOS setup
