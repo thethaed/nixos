@@ -21,7 +21,7 @@
     gnome-photos
     gnome-tour
     gnome-connections
-    gnome-calendar
+    gnome.gnome-calendar
     gnome.gnome-weather
     gnome.gnome-contacts
     gnome.gnome-music
@@ -33,6 +33,7 @@
     gnome.epiphany
     gnome.geary
     gnome.yelp
+    gnome.totem
     
   ];
 
