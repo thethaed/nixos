@@ -26,7 +26,7 @@
           config.allowUnfree = true;
         };
       defaultNixOptions = {
-        nix.autoOptimiseStore = true;
+        nix.settings.auto-optimise-store = true;
       };
       mkComputer = configurationNix: userName: extraModules: extraHomeModules: inputs.nixpkgs.lib.nixosSystem {
         inherit system;
