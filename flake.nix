@@ -4,8 +4,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = github:NixOS/nixos-hardware/master;
-    # home-manager.url = "github:nix-community/home-manager/release-23.05";
-    # home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager/release-23.05";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # emacs-overlay.url = "github:nix-community/emacs-overlay/master";
     
   };
@@ -40,14 +40,14 @@
           #User config
           (./. + "/users/${userName}")
           #Home manager
- #         home-manager.nixosModules.home-manager
- #         {
- #           home-manager.useGlobalPkgs = true;
- #           home-manager.useUserPackages = true;
- #           home-manager.users."${userName}" = {
- #             imports = [ (./. + "/users/${userName}/home.nix") ] ++ extraHomeModules;
- #           };
- #         }
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users."${userName}" = {
+              imports = [ (./. + "/users/${userName}/home.nix") ] ++ extraHomeModules;
+            };
+          }
         ] ++ extraModules;
       };
     in
@@ -83,32 +83,6 @@
 #            ./modules/zsh
 #            ./modules/emacs
           ]; #modules to be loaded by home-manager
-#        ascent = mkComputer
-#          ./machines/ascent
-#          "worker"
-#          [
-#            ./modules/ssh
-#            ./modules/tailscale
-#            ./modules/matrix
-#          ]
-#          [ ];
-#        humblegeoffrey = mkComputer
-#          ./machines/humblegeoffrey
-#          "dovalperin"
-#          [
-#            ./modules/xserver
-#            ./modules/gnome
-#            ./modules/ssh
-#            ./modules/browsers
-#            ./modules/postgresql
-#            ./modules/redis
-#            ./modules/tailscale
-#            ./modules/zoom
-#          ] #modules to load
-#          [
-#            ./modules/zsh
-#            ./modules/emacs
-#          ]; #modules to be loaded by home-manager
       };
     };
 }
