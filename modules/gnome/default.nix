@@ -22,10 +22,15 @@
     gnome-tour
     gnome.gnome-weather
     gnome.gnome-contacts
-    gnome.simple-scan
     gnome.gnome-music
     gnome.gnome-characters
     gnome.gnome-initial-setup
+    gnome.gnome-connections
+    gnome.gnome-calender
+    gnome.gnome-maps
+    gnome.simple-scan
+    gnome.cheese
+    gnome.epiphany
     
   ];
 
