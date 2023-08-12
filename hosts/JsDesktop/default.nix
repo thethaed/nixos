@@ -19,4 +19,16 @@
     wget
     git
   ];
+  
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.john = {
+    isNormalUser = true;
+    description = "John";
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [
+      firefox
+    
+    ];
+  };
+  
 }

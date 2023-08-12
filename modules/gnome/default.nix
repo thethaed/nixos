@@ -20,24 +20,26 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-photos
     gnome-tour
+    gnome-connections
+    gnome-calendar
     gnome.gnome-weather
     gnome.gnome-contacts
     gnome.gnome-music
     gnome.gnome-characters
     gnome.gnome-initial-setup
-    gnome.gnome-connections
-    gnome.gnome-calender
     gnome.gnome-maps
     gnome.simple-scan
     gnome.cheese
     gnome.epiphany
+    gnome.geary
+    gnome.yelp
     
   ];
 
 #  qt5 = {
 #    enable = true;
 #    platformTheme = "gnome";
-#    style = "adwaita-dark";
+#    style = "adwaita-dark";x
 #  };
 
   services.udev.packages = with pkgs; [ gnome3.gnome-settings-daemon ];
