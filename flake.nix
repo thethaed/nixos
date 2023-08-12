@@ -12,7 +12,7 @@
 
   outputs = inputs@{ 
     self, 
-  #  home-manager, 
+    home-manager, 
     nixpkgs, 
     unstable, 
     nixos-hardware, 
@@ -33,12 +33,12 @@
         specialArgs = { inherit system inputs pkgs nixos-hardware; };
         modules = [
           #Secrets management
-         # sops-nix.nixosModules.sops
+#         sops-nix.nixosModules.sops
           #Machine config
           configurationNix
           defaultNixOptions
           #User config
- #         (./. + "/users/${userName}")
+          (./. + "/users/${userName}")
           #Home manager
  #         home-manager.nixosModules.home-manager
  #         {
