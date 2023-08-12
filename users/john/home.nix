@@ -2,7 +2,7 @@
   #Home manager configuration
   home.username = "john";
   home.homeDirectory = "/home/john";
-  imports = [ ./../../home ./../../home/nixos ];
+  imports = [ ./../../home ]; # ./../../home/nixos ];
 
   home.packages = with pkgs; [
     spotify
