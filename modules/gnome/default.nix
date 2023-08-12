@@ -34,7 +34,12 @@
     gnome.geary
     gnome.yelp
     gnome.totem
-    
+    gnome.baobab
+    gnome.eog
+    gnome.seahorse
+    gnome.file-roller
+    gnome.evince
+        
   ];
 
 #  qt5 = {
