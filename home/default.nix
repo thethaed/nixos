@@ -1,6 +1,9 @@
 #Shared by all machines
-{ config, pkgs, ... }:
+{ config, pkgs, stateVer, ... }:
 {
+
+  home.stateVersion = "23.05";
+  
   home.packages = with pkgs; [
     nixpkgs-fmt
    # gnumake

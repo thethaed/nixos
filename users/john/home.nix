@@ -51,21 +51,21 @@
 #    userEmail = "git@dov.dev";
 #  };
 
-  programs.git = {
-    enable = true;
-    userName = "thethaed";
-    userEmail = "github@johnlundin.se";
-    delta.enable = true;
-    signing = {
-      key = "7F2C07B91B52BB61";
-      signByDefault = true;
-    };
-    extraConfig = {
-      init = {
-        defaultBranch = "main";
-      };
-    };
-  };
+#  programs.git = {
+#    enable = true;
+#    userName = "thethaed";
+#    userEmail = "github@johnlundin.se";
+#    delta.enable = true;
+#    signing = {
+#      key = "7F2C07B91B52BB61";
+#      signByDefault = true;
+#    };
+#    extraConfig = {
+#      init = {
+#        defaultBranch = "main";
+#      };
+#    };
+#  };
 
 #  programs.go = {
 #    enable = true;

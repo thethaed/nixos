@@ -53,18 +53,6 @@
     in
     {
       nixosConfigurations = {
-#        nixosvm = mkComputer
-#          ./machines/nixosvm #machine specific configuration
-#          "dovalperin" #default user
-#          [
-#            ./modules/gnome
-#            ./modules/1password
-#            ./modules/tailscale
-#            ./modules/ssh
-#          ] #modules to load
-#          [
-#            ./modules/zsh
-#          ]; #modules to be loaded by home-manager
         JsDesktop = mkComputer
           ./hosts/JsDesktop #machine specific configuration
           "john" #default user
@@ -83,6 +71,19 @@
 #            ./modules/zsh
 #            ./modules/emacs
           ]; #modules to be loaded by home-manager
+
+#        nixosvm = mkComputer
+#          ./machines/nixosvm #machine specific configuration
+#          "dovalperin" #default user
+#          [
+#            ./modules/gnome
+#            ./modules/1password
+#            ./modules/tailscale
+#            ./modules/ssh
+#          ] #modules to load
+#          [
+#            ./modules/zsh
+#          ]; #modules to be loaded by home-manager
       };
     };
 }
