@@ -10,9 +10,9 @@
     gnomeExtensions.advanced-alttab-window-switcher
    # gnomeExtensions.adwaita-theme-switcher
     gnomeExtensions.gtile
-    gnome.gnome-tweaks
+    
     wmctrl
-    gnvim
+   # gnvim
     adwaita-qt
     libsForQt5.qtstyleplugins
   ];
@@ -28,6 +28,7 @@
     gnome.gnome-characters
     gnome.gnome-initial-setup
     gnome.gnome-maps
+    gnome.gnome-tweaks
     gnome.simple-scan
     gnome.cheese
     gnome.epiphany
@@ -39,6 +40,7 @@
     gnome.seahorse
     gnome.file-roller
     gnome.evince
+
         
   ];
 

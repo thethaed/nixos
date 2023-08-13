@@ -5,6 +5,7 @@
   imports = [ ./../../home ]; # ./../../home/nixos ];
 
   home.packages = with pkgs; [
+    synology-drive-client
     spotify
     steam-run
     libreoffice
@@ -42,8 +43,8 @@
 #    enableZshIntegration = true;
 #  };
 
-#  services.gpg-agent.enable = true;
-#  programs.gpg.enable = true;
+  services.gpg-agent.enable = true;
+  programs.gpg.enable = true;
 
 #  programs.mercurial = {
 #    enable = true;

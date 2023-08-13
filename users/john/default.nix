@@ -9,14 +9,17 @@
     extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
     packages = with pkgs; [
       firefox
-      gimp
+      #gimp
+      vmware-horizon-client
+      vmware-workstation
+      gnupg
     
     ];
   };
   
   programs.steam.enable = true;
-  # programs._1password-gui.enable = true;
-  # programs._1password-gui.gid = 5000;
-  # programs._1password-gui.polkitPolicyOwners = [ "john" ];
+  programs._1password-gui.enable = true;
+#  programs._1password-gui.gid = 5000;
+  programs._1password-gui.polkitPolicyOwners = [ "john" ];
 
 }

@@ -68,7 +68,7 @@
             #./modules/1password #needs to be a systemPackage to install polkit policy
           ] #modules to load
           [
-#            ./modules/zsh
+            ./modules/zsh
 #            ./modules/emacs
           ]; #modules to be loaded by home-manager
 
