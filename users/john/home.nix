@@ -23,10 +23,10 @@
     vscode
   ];
 
-#  dov = {
-#    zsh.enable = true;
+  dov = {
+    zsh.enable = true;
 #    emacs.enable = true;
-#  };
+  };
 
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
@@ -38,10 +38,10 @@
     package = pkgs.vscode;
   };
 
-#  programs.fzf = {
-#    enable = true;
-#    enableZshIntegration = true;
-#  };
+  programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 
   services.gpg-agent.enable = true;
   programs.gpg.enable = true;
