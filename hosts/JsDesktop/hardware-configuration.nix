@@ -22,6 +22,11 @@
     { device = "/dev/disk/by-uuid/5934-89F1";
       fsType = "vfat";
     };
+    
+  fileSystems."/mnt/extradisk" =
+    { device = "/dev/disk/by-uuid/48356998-e38b-43ef-a9bc-6209bd04b7ff";
+      fsType = "ext4";
+    };
 
   swapDevices = [ ];
 

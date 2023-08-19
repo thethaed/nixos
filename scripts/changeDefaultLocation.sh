@@ -24,6 +24,7 @@ declare -A xdg_subdirs=(
     ["XDG_DOCUMENTS_DIR"]="Documents"
     ["XDG_DESKTOP_DIR"]="Desktop"
     ["XDG_TEMPLATES_DIR"]="Templates"
+    ["XDG_GAMES_DIR"]="Games"
     ["XDG_MUSIC_DIR"]="Music"
     ["XDG_PICTURES_DIR"]="Pictures"
     ["XDG_VIDEOS_DIR"]="Videos"
