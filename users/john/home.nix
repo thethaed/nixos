@@ -21,6 +21,7 @@
     # remmina
     signal-desktop
     vscode
+    jellyfin-media-player
   ];
 
   dov = {
