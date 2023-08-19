@@ -13,6 +13,7 @@
       vmware-horizon-client
       vmware-workstation
       gnupg
+      steam
     
     ];
   };

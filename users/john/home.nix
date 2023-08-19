@@ -7,7 +7,7 @@
   home.packages = with pkgs; [
     synology-drive-client
     spotify
-    steam-run
+    steam
     libreoffice
     slack
     gimp
